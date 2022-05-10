@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../output",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+  },
+  "include": ["./**/*.ts"],
+  "exclude": ["../../node_modules"]
+}

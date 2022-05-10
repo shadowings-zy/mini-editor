@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "outDir": "../../output/client",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "target": "esnext",
+    "module": "esnext",
+  },
+  "include": ["./**/*.ts", "./**/*.d.ts", "./**/*.tsx"],
+  "exclude": ["../../node_modules"]
+}
