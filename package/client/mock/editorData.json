@@ -1,0 +1,36 @@
+{
+  "projectId": "xxx",
+  "projectName": "xxx",
+  "author": "xxx",
+  "data": [
+    {
+      "id": "xxx",
+      "type": "text",
+      "data": "xxxxxx",
+      "color": "#000000",
+      "size": "12px",
+      "width": "100px",
+      "height": "100px",
+      "left": "100px",
+      "top": "100px"
+    },
+    {
+      "id": "xxx",
+      "type": "image",
+      "data": "http://xxxxxxx",
+      "width": "100px",
+      "height": "100px",
+      "left": "100px",
+      "top": "100px"
+    },
+    {
+      "id": "xxx",
+      "type": "video",
+      "data": "http://xxxxxxx",
+      "width": "100px",
+      "height": "100px",
+      "left": "100px",
+      "top": "100px"
+    }
+  ]
+}
