@@ -1,0 +1,7 @@
+.left-panel {
+  width: 20vw;
+  height: 100vh;
+  border-right: 1px solid #000000;
+  flex-shrink: 0;
+  background-color: #ffffff;
+}
