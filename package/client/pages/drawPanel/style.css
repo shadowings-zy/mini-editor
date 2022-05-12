@@ -3,4 +3,5 @@
   margin: 20px;
   height: calc(100vh - 40px);
   background-color: #ffffff;
+  position: relative;
 }
