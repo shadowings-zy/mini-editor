@@ -1,5 +1,5 @@
 .draw-panel {
-  width: calc(100vw - 42vw);
+  width: calc(100vw - 500px);
   margin: 20px;
   height: calc(100vh - 40px);
   background-color: #ffffff;

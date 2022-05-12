@@ -1,13 +1,11 @@
 import React from 'react';
 import { useDrag } from 'react-dnd';
+import { COMPONENT_TYPE } from '../../constants';
 import './style.css';
 
 export default function TextComponent() {
   const [_, drag] = useDrag(() => ({
-    type: 'text',
-    collect: (monitor) => ({
-      isDragging: !!monitor.isDragging()
-    })
+    type: COMPONENT_TYPE.TEXT
   }));
 
   return (

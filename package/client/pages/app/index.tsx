@@ -54,6 +54,7 @@ export default function App() {
         <LeftPanel></LeftPanel>
         <DrawPanel
           data={drawPanelData}
+          setData={setDrawPanelData}
           setRightPanelType={setRightPanelType}
           setRightPanelElementId={setRightPanelElementId}
         ></DrawPanel>
