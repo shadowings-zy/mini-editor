@@ -51,7 +51,7 @@ export default function App() {
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="flex-row-space-between app">
-        <LeftPanel></LeftPanel>
+        <LeftPanel data={drawPanelData}></LeftPanel>
         <DrawPanel
           data={drawPanelData}
           setData={setDrawPanelData}

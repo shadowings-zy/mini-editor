@@ -6,3 +6,11 @@
   background-color: #ffffff;
   padding: 20px;
 }
+
+.component-list {
+  height: 80vh;
+}
+
+.save-button {
+  width: 100%;
+}
