@@ -5,11 +5,12 @@ import './style.css';
 interface IDrawPanelProps {
   data: any;
   setRightPanelType: Function;
+  setRightPanelElementId: Function;
 }
 
 export default function DrawPanel(props: IDrawPanelProps) {
-  const { data, setRightPanelType } = props;
-  
+  const { data, setRightPanelType, setRightPanelElementId } = props;
+
   const generateContent = () => {
     const output = [];
     for (const item of data) {
@@ -18,8 +19,8 @@ export default function DrawPanel(props: IDrawPanelProps) {
           <div
             key={item.id}
             onClick={() => {
-              console.log(`点击的组件 id 为：${item.id}`);
               setRightPanelType(item.type);
+              setRightPanelElementId(item.id);
             }}
             style={{
               color: item.color,
@@ -38,7 +39,6 @@ export default function DrawPanel(props: IDrawPanelProps) {
       }
     }
 
-    console.log('output: ', output);
     return output;
   };
 

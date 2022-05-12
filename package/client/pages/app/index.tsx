@@ -45,14 +45,24 @@ const MOCK_DRAW_DATA = [
 
 export default function App() {
   const [drawPanelData, setDrawPanelData] = useState([...MOCK_DRAW_DATA]);
-  const [rightPanelType, setRightPanelType] = useState(RIGHT_PANEL_TYPE.TEXT);
+  const [rightPanelType, setRightPanelType] = useState(RIGHT_PANEL_TYPE.NONE);
+  const [rightPanelElementId, setRightPanelElementId] = useState('');
 
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="flex-row-space-between app">
         <LeftPanel></LeftPanel>
-        <DrawPanel data={drawPanelData} setRightPanelType={setRightPanelType}></DrawPanel>
-        <RightPanel></RightPanel>
+        <DrawPanel
+          data={drawPanelData}
+          setRightPanelType={setRightPanelType}
+          setRightPanelElementId={setRightPanelElementId}
+        ></DrawPanel>
+        <RightPanel
+          type={rightPanelType}
+          data={drawPanelData}
+          elementId={rightPanelElementId}
+          setDrawPanelData={setDrawPanelData}
+        ></RightPanel>
       </div>
     </DndProvider>
   );
