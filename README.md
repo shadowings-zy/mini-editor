@@ -1,9 +1,10 @@
-# react+koa+ts 前后端分离模板项目
+# 一个最简单的低代码编辑器
 
 ## 一、技术选型
 
 - 编程语言：typescript
 - 前端框架：react
+- 拖拽库：react-dnd
 - 前端包管理工具：pnpm
 - 打包工具：webpack
 - 后端框架：koa

@@ -53,7 +53,6 @@ export default function App() {
       <div className="flex-row-space-between app">
         <LeftPanel data={drawPanelData}></LeftPanel>
         <DrawPanel
-          key={`${Math.floor(Math.random() * 1000)}-${drawPanelData.length}`}
           data={drawPanelData}
           setData={setDrawPanelData}
           setRightPanelType={setRightPanelType}
